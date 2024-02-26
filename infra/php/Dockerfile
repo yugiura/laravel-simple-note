@@ -11,6 +11,13 @@ RUN apt-get update && \
   rm -rf /var/lib/apt/lists/* && \
   docker-php-ext-install intl pdo_mysql zip bcmath
 
+RUN curl -sL https://deb.nodesource.com/setup_18.x | bash - && \
+    apt-get install -y nodejs
+
+RUN apt-get update && \
+    npm install -g npm && \
+    npm install -g @vue/cli
+
 COPY ./php.ini /usr/local/etc/php/php.ini
 
 WORKDIR /data
