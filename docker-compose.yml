@@ -5,6 +5,7 @@ services:
     ports:
       - 5173:5173
       - 9090:9090
+      - 9091:9091
     volumes:
       - ./src:/data
 
