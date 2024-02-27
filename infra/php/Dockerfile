@@ -23,3 +23,4 @@ COPY ./php.ini /usr/local/etc/php/php.ini
 WORKDIR /data
 
 EXPOSE 5173
+EXPOSE 9090

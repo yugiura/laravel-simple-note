@@ -9,3 +9,6 @@ npm install && npm run dev
 npm audit fix
 npm audit fix --force
 npm run dev
+
+artisanでserveする場合
+php artisan serve --host=0.0.0.0 --port=9090
